@@ -1,0 +1,42 @@
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  border-bottom: 2px solid #52aef7;
+  margin: 0;
+}
+
+.nav-item,
+.dd-nav-item,
+.dd-item {
+  color: black;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+.dd-nav-item {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dd-content {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  top: 54px;
+  padding: 10px;
+  width: max-content;
+  z-index: 2;
+  border: 2px solid #2196ef;
+  background-color: white;
+}
+
+.dd-content li {
+  margin: 5px 0;
+}
+
+.dd-nav-item:hover .dd-content {
+  display: block;
+}
